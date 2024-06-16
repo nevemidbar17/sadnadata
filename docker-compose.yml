@@ -1,0 +1,6 @@
+services:
+  python:
+    image: limited_python
+    command: /usr/src/app main
+    volumes:
+      - .:/usr/src/app
