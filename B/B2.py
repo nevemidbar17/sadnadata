@@ -43,5 +43,5 @@ for country in country_to_sh2.keys():
 		counts_per_range["81-100"] += 1
 
 
-print(f"Months: {counts_per_range}")
+print(f"Number of countries in each bucket {counts_per_range}")
 

@@ -32,5 +32,5 @@ for country in country_to_sh4.keys():
 	index = list(counts_per_range.keys())[min(len(country_to_sh4[country]) // 150, 6)]
 	counts_per_range[index] += 1
 
-print(f"Months: {counts_per_range}")
+print(f"Number of countries in each bucket {counts_per_range}")
 
