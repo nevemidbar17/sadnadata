@@ -9,7 +9,7 @@ print(f"{NUMBER_OF_BYTES_TO_READ=}")
 bucket_labels = ["0-10", "11-20", "21-30", "31-40", "41-50", "51-60", ">60"]
 product_num_per_bucket = [0] * len(bucket_labels)
 
-N = 5
+N = 10
 
 for modulo in range(N):
     products_per_city_country = {}
