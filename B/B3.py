@@ -2,11 +2,11 @@ NUMBER_OF_BYTES_TO_READ = 50_000
 
 COUNTRY_INDEX = 3
 CITY_INDEX = 4
-SH4_DESC_INDEX = 6
+SH4_DESC_INDEX = 5
 
 print(f"{NUMBER_OF_BYTES_TO_READ=}")
 
-N = 5
+N = 10
 
 number_of_unique = 0
 
