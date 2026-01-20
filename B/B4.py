@@ -35,9 +35,22 @@ for modulo in range(N):
                     if key not in products_per_city_country.keys():
                         products_per_city_country[key] = set()
                     products_per_city_country[key].add(hash(sh4_desc))
-            
+                    
     for product_set in products_per_city_country.values():
-        product_num_per_bucket[min(len(product_set) // 10, len(product_num_per_bucket) - 1)] += 1
+        if len(product_num_per_bucket) >= 10:
+            product_num_per_bucket[0] += 1
+        elif len(product_num_per_bucket) >= 20:
+            product_num_per_bucket[1] += 1
+        elif len(product_num_per_bucket) >= 30:
+            product_num_per_bucket[2] += 1
+        elif len(product_num_per_bucket) >= 40:
+            product_num_per_bucket[3] += 1
+        elif len(product_num_per_bucket) >= 50:
+            product_num_per_bucket[4] += 1
+        elif len(product_num_per_bucket) >= 60:
+            product_num_per_bucket[5] += 1
+        else:
+            product_num_per_bucket[6] += 1
 
 print(f"Number of city-country duos in each number-of-products bucket:")
 print(dict(zip(bucket_labels, product_num_per_bucket)))
